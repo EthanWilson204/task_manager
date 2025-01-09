@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: darkcyan;
+            color: white;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .body {
+            padding: 30px;
+            text-align: left;
+            background-color: white;
+            font-style: 20px;
+        }
+        .accent {
+            background-color: black;
+        }
+        .button1 {
+            height: 400px;
+            width: 200px;
+            text-align: center;
+            display: flex;
+            margin-bottom: 10px;
+            border-radius: 30px;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        .divider {
+            width:5px;
+            height: 5px;;
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>TASK LIST</h1>
+        <p>Hello, Ethan. Here are your current tasks</p>
+    </div>
+    <div class="button1">
+        <button onclick="addTask()">Add Task</button>
+        <div class="divider"></div>
+        <button onclick="removeTask()">Remove Task</button>
+        <div class="divider"></div>
+        <button onclick="completeTask()">Mark Task as Complete</button>
+    </div>
+</body>
+</html>
